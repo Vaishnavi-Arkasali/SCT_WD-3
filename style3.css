@@ -1,0 +1,45 @@
+/* Center the board and give the page a nice background */
+body {
+    background: linear-gradient(135deg, #f8ffae 0%, #43c6ac 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+
+/* Style the board */
+#tic-tac-toe-board {
+    display: grid;
+    grid-template-columns: repeat(3, 70px);
+    gap: 10px;
+    background: rgba(255,255,255,0.7);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.15);
+}
+
+/* Style each cell */
+.cell {
+    width: 70px;
+    height: 70px;
+    font-size: 2.5em;
+    text-align: center;
+    line-height: 70px;
+    border-radius: 10px;
+    border: 2px solid #43c6ac;
+    background: #fffbe7;
+    color: #43c6ac;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s, transform 0.1s;
+}
+
+.cell:hover {
+    background: #43c6ac;
+    color: #fffbe7;
+    transform: scale(1.08);
+}
+
+/* Optional: Style the alert popups (if you use custom modals) */
